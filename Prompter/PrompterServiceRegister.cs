@@ -14,7 +14,6 @@ namespace Prompter
         public static void AddPrompterService(this IServiceCollection services)
         {
             services.AddTransient<InferenceModule>();
-            services.AddTransient<IInference, HuggingFace>();
         }
     }
 }
