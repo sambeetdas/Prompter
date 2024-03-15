@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prompter.Common\Prompter.Common.csproj" />
+    <ProjectReference Include="..\Prompter.Models\Prompter.Models.csproj" />
+  </ItemGroup>
+
+</Project>
