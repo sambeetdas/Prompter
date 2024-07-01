@@ -4,6 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Prompter</Title>
+    <Version>1.0.0</Version>
+    <Authors>Sambeet Das</Authors>
+    <Description>Prompter is a package which help dotnet developer to build application with LLM.</Description>
+    <PackageTags>Generative AI, LLM, Dotnet, C#</PackageTags>
+    <PackageReleaseNotes>This is Beta version</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
