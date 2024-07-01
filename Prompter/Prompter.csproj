@@ -4,12 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>Prompter</Title>
+    <Title>Prompter.AI</Title>
     <Version>1.0.0</Version>
     <Authors>Sambeet Das</Authors>
     <Description>Prompter is a package which help dotnet developer to build application with LLM.</Description>
     <PackageTags>Generative AI, LLM, Dotnet, C#</PackageTags>
     <PackageReleaseNotes>This is Beta version</PackageReleaseNotes>
+    <PackageId>Prompter.AI</PackageId>
+    <PackageIcon>prompter_logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +23,13 @@
     <ProjectReference Include="..\LLM.Provider\LLM.Provider.csproj" />
     <ProjectReference Include="..\Prompter.Common\Prompter.Common.csproj" />
     <ProjectReference Include="..\Prompter.Models\Prompter.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="prompter_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
