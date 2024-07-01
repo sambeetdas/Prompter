@@ -38,5 +38,34 @@ namespace Prompter.Common
                 }
             }
         }
+
+        public static async Task<String> Get(string url, string authToken)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+
+                    if (!String.IsNullOrWhiteSpace(authToken))
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string content = await response.Content.ReadAsStringAsync();
+                        return content;
+                    }
+                    else
+                    {
+                        return response.StatusCode.ToString();
+                    }
+                }
+                catch (HttpRequestException e)
+                {
+                    return e.Message;
+                }
+            }
+        }
     }
 }

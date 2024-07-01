@@ -1,4 +1,5 @@
-﻿using Prompter.Models.HuggingFace;
+﻿using Prompter.Models;
+using Prompter.Models.HuggingFace;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace LLM.Provider.Contract
 {
     public interface IInference
     {
-        Task<String> Execute(string modelId, string authToken, PromptModel promptModel);
+        Task<String> Execute(PromptModel prompt, InferenceConfigModel config);
     }
 }

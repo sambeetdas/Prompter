@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Prompter.Models.HuggingFace
 {
-    public class PromptModel
+    public class RequestModel
     {
         [JsonPropertyName("inputs")]
         public string Inputs { get; set; }
 
         [JsonPropertyName("parameters ")]
-        public PromptParam Parameters { get; set; }
+        public RequestParam Parameters { get; set; }
     }
 
-    public class PromptParam
+    public class RequestParam
     {
         [JsonPropertyName("max_new_tokens ")]
         public double MaxNewToken { get; set; }
